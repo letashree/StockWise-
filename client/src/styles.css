@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #17212b; background: #f4f6f8; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .65; }
+.app-shell { max-width: 1500px; margin: 0 auto; padding: 28px 34px 20px; }
+.topbar { display: flex; align-items: center; gap: 13px; border-bottom: 1px solid #e2e7ec; padding-bottom: 24px; }
+.brand-mark { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 13px; color: white; background: #245b4a; font-family: Manrope, sans-serif; font-weight: 800; font-size: 23px; }
+.eyebrow { margin: 0 0 5px; font-size: 10px; letter-spacing: 1.5px; font-weight: 700; color: #7c8995; }
+h1, h2, h3, h4, p { margin-top: 0; }
+h1 { margin: 0; font: 800 21px Manrope, sans-serif; letter-spacing: -.5px; }
+.live-pill { margin-left: auto; display: flex; align-items: center; gap: 8px; border: 1px solid #dbe8df; border-radius: 99px; padding: 8px 12px; font-size: 12px; color: #386c54; background: #f5fbf6; }
+.live-pill span { width: 7px; height: 7px; border-radius: 50%; background: #4ca876; }
+.intro { padding: 32px 0 24px; }
+h2 { font: 800 clamp(25px, 3vw, 34px) Manrope, sans-serif; letter-spacing: -1.2px; margin: 0 0 9px; }
+.muted { color: #71808d; margin: 0; font-size: 14px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 22px; }
+.stat-card { background: white; border: 1px solid #e5e9ed; border-radius: 14px; padding: 19px 20px; min-width: 0; }
+.stat-card p { font-size: 12px; color: #6f7d88; margin-bottom: 12px; }
+.stat-card strong { display: block; font: 800 clamp(21px, 2vw, 27px) Manrope, sans-serif; letter-spacing: -.8px; overflow-wrap: anywhere; }
+.stat-card small { display: block; color: #8a96a0; font-size: 11px; margin-top: 9px; }
+.stat-warning strong { color: #bd6a27; }
+.workspace { display: grid; grid-template-columns: minmax(290px, .78fr) minmax(0, 1.8fr); gap: 18px; align-items: start; }
+.panel { background: white; border: 1px solid #e5e9ed; border-radius: 15px; min-width: 0; }
+.form-panel { padding: 22px; }
+.inventory-panel { padding: 22px 0 15px; }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 22px 18px; }
+.form-panel .panel-heading { padding: 0 0 19px; }
+h3 { font: 800 18px Manrope, sans-serif; margin: 0; letter-spacing: -.4px; }
+form { display: grid; gap: 14px; }
+form label { display: grid; gap: 7px; font-size: 12px; color: #566572; font-weight: 600; }
+input, select { width: 100%; min-width: 0; border: 1px solid #dce2e7; border-radius: 8px; padding: 11px 12px; color: #1c2a34; background: #fff; outline: none; font-size: 12px; }
+input:focus, select:focus { border-color: #438a70; box-shadow: 0 0 0 3px #438a701a; }
+input::placeholder { color: #a3adb5; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+form small { color: #87939c; font-weight: 400; line-height: 1.4; }
+.primary-button { width: 100%; border: 0; border-radius: 8px; background: #245b4a; color: white; font-weight: 700; font-size: 12px; padding: 13px; margin-top: 3px; }
+.primary-button:hover { background: #194b3b; }
+.text-button { background: transparent; border: 0; padding: 4px 2px; color: #2d6d56; font-weight: 700; font-size: 11px; white-space: nowrap; }
+.danger-text { color: #b84d4d; }
+.count-pill { font-size: 11px; color: #6d7c86; background: #f2f5f6; border-radius: 7px; padding: 7px 9px; white-space: nowrap; }
+.filters { display: grid; grid-template-columns: minmax(130px, 1.5fr) minmax(120px, 1fr) auto; gap: 9px; padding: 0 22px 18px; }
+.check-filter { display: flex; align-items: center; gap: 7px; font-size: 11px; color: #65737e; white-space: nowrap; }
+.check-filter input { width: 14px; height: 14px; accent-color: #245b4a; }
+.table-wrap { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 11px; }
+thead { background: #f8fafb; color: #84909a; text-transform: uppercase; letter-spacing: .55px; font-size: 9px; }
+th { padding: 12px 13px; font-weight: 700; white-space: nowrap; }
+th:first-child, td:first-child { padding-left: 22px; }
+td { padding: 15px 13px; border-top: 1px solid #edf0f2; color: #596873; white-space: nowrap; }
+td strong { display: block; color: #26343d; font-size: 11px; }
+.sku { display: block; color: #9aa4ac; margin-top: 4px; font-size: 10px; }
+.status { display: inline-block; padding: 5px 7px; border-radius: 5px; font-size: 9px; font-weight: 700; }
+.status-ok { color: #2f7956; background: #eaf6ee; }
+.status-low { color: #a65b20; background: #fff1e4; }
+.actions { display: flex; align-items: center; gap: 9px; }
+.footnote { padding: 14px 22px 0; margin: 0; color: #98a2aa; font-size: 10px; line-height: 1.5; }
+.empty-state { text-align: center; padding: 45px 20px; color: #81909b; font-size: 12px; }
+.empty-state h4 { color: #31414b; margin: 8px 0; font: 700 15px Manrope, sans-serif; }
+.empty-state p { margin: 0; }
+.empty-icon { margin: auto; display: grid; place-items: center; border-radius: 12px; background: #f0f5f2; width: 38px; height: 38px; color: #52816a; font-size: 23px; }
+.alert { padding: 12px 15px; border-radius: 9px; margin-bottom: 14px; font-size: 12px; }
+.error { color: #a33d3d; border: 1px solid #f0cccc; background: #fff3f3; }
+.success { color: #276a49; border: 1px solid #cce7d5; background: #f0fbf4; }
+footer { padding: 23px 0 0; text-align: center; color: #9ba5ac; font-size: 10px; }
+@media (max-width: 1100px) { .workspace { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 650px) { .app-shell { padding: 18px 13px; } .stats-grid { gap: 9px; } .stat-card { padding: 14px; } .stat-card strong { font-size: 21px; } .filters { grid-template-columns: 1fr; } .check-filter { padding: 4px 0; } .form-panel, .inventory-panel { padding: 17px 0; } .form-panel { padding: 17px; } .panel-heading { padding-left: 17px; padding-right: 17px; } .inventory-panel .panel-heading { padding-bottom: 15px; } .inventory-panel .filters { padding-left: 17px; padding-right: 17px; } .two-col { gap: 8px; } .live-pill { font-size: 0; padding: 10px; } .live-pill span { margin: 0; } }
